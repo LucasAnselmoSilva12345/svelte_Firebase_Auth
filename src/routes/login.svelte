@@ -15,33 +15,11 @@
       console.log(error);
     }
   };
-
-  import { GoogleLogo } from 'phosphor-svelte';
 </script>
 
-<h1>Login with Google</h1>
-
-<button class="btnLoginGoogle" on:click={login}>
+<button
+  class="bg-red-700 hover:bg-red-600 px-4 py-2 rounded-md text-white"
+  on:click={login}
+>
   Google
-  <GoogleLogo color="#e5e9f0" size={20} />
 </button>
-
-<style>
-  .btnLoginGoogle {
-    margin: 1.25rem auto;
-    padding: 0.625rem 1.5625rem;
-    border: 0rem;
-    border-radius: 0.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-
-    font-size: 1.125rem;
-    font-weight: 700;
-
-    background-color: #f03e3e;
-    color: #e5e9f0;
-  }
-</style>

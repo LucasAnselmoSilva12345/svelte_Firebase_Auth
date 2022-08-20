@@ -2,25 +2,14 @@
   import { user, isLoggedIn } from '../stores.js';
 </script>
 
-{#if $isLoggedIn}
-  <main class="main">
-    <div class="containerUser">
-      <div class="containerImg">
-        <img src={user.photoURL} alt={$user.displayName} />
-      </div>
-      <div class="containerInfoUser">
-        <h2>{$user.displayName}</h2>
-        <p>{$user.email}</p>
-      </div>
-    </div>
-  </main>
-{/if}
-
-<style>
-  .main {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-</style>
+<div class="bg-zinc-700 px-10 py-10 flex flex-col items-center gap-y-4">
+  {#if $isLoggedIn}
+    <img
+      src={user.photoURL}
+      alt={$user.displayName}
+      class="w-20 h-20 rounded-full m-auto"
+    />
+    <h2>{$user.displayName}</h2>
+    <p>{$user.email}</p>
+  {/if}
+</div>
