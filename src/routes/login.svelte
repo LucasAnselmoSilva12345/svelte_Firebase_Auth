@@ -10,7 +10,10 @@
       const response = await signInWithPopup(auth, provider);
       $user = response.user;
       $isLoggedIn = true;
-      goto('/profile');
+
+      if ($user && $isLoggedIn) {
+        goto('/profile');
+      }
     } catch (error) {
       console.log(error);
     }

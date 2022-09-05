@@ -1,4 +1,11 @@
-<h1 class="text-3xl font-bold underline">Welcome to SvelteKit</h1>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
+<script>
+  import { user, isLoggedIn } from '../stores.js';
+</script>
+
+<main>
+  {#if $isLoggedIn}
+    <h2>Logado</h2>
+  {:else}
+    <h2>Não tá logado</h2>
+  {/if}
+</main>
