@@ -1,38 +1,91 @@
-# create-svelte
+# Autenticação de usuário via Google com Svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+[Version this Readme in english](https://github.com/LucasAnselmoSilva12345/svelte_Firebase_Auth/blob/master/README-en.md)
 
-## Creating a project
+## Objetivo desse projeto
 
-If you're seeing this, you've probably already done this step. Congrats!
+Esse projeto visa realizar uma autenticação de usuário, utilizando a tecnologia Svelte, junto com o Firebase, uma ferramenta feita pela Google que nos possibilita realizar essa autenticação dos usuário na nossa aplicação.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Assim que um usuário realiza uma autenticação, o mesmo será redirecionado para uma pagina, onde o mesmo terá acesso a dados de sua conta como sua foto de usuário, nome e email utilizado no processo de autenticação.
 
-# create a new project in my-app
-npm create svelte@latest my-app
+## Tecnologias utilizadas nesse projeto
+
+Nesse projeto, foram utilizadas as seguintes tecnologias:
+
+### Front-end
+
+- [SvelteKit](https://svelte.dev/)
+- [TailwindCss](https://tailwindcss.com/)
+- [Phopshor-Svelte](https://www.npmjs.com/package/phosphor-svelte)
+
+### Back-end
+
+- [Firebase](https://firebase.google.com/)
+
+## Como executar esse projeto
+
+**Para executar o site, tenha certeza que você tem o [Git](https://git-scm.com/) instalado em sua máquina**.
+
+1. Faça o clone desse repositório através do comando:
+
+```sh
+
+$ git clone https://github.com/LucasAnselmoSilva12345/linkImportante
+
 ```
 
-## Developing
+2. Após realizar o clone do projeto, ainda no terminal, entre na pasta do projeto:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```sh
 
-```bash
-npm run dev
+$ cd pasta
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Obs. Para realizar a execução do comando no próximo passo, tenha garantia que tenha o [node](https://nodejs.org/en/) instalado em sua máquina para poder utilizar o `npm`. Ou caso prefira instalar as dependências via `yarn` tenha garantia que tem o [yarn](https://yarnpkg.com/) instalado em sua máquina.
 
-To create a production version of your app:
+3. Após entrar na pasta do projeto, rode o comando:
 
-```bash
-npm run build
+```sh
+
+$ npm install
+
+ou
+
+$ yarn
+
 ```
 
-You can preview the production build with `npm run preview`.
+Para realizar a instalação de dependências.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+4. Após instalação das dependências e ainda na pasta do projeto via terminal, rode o comando:
+
+```sh
+
+$ code .
+
+```
+
+Para abrir o projeto no Visual Studio Code.
+
+5. Após abrir o projeto no seu Visual Studio Code, volte para a tela do terminal, e rode o comando:
+
+```sh
+
+$ npm run dev
+
+ou
+
+yarn dev
+
+```
+
+Para executar o projeto
+
+6. Feito isso, basta abrir o projeto no seu navegador, através do link:
+
+```sh
+
+$ http://localhost:5173/
+
+```
